@@ -1,2 +1,2 @@
-[$HOME/.config/vcsh/repo.d/readline.git]
+[.config/vcsh/repo.d/readline.git]
 checkout = vcsh clone git@github.com:sjrosen/config-readline.git readline
