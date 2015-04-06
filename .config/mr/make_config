@@ -1,0 +1,10 @@
+#!/bin/bash
+for name in $@; do
+    file=~/.config/mr/available.d/"$name".vcsh
+    if [ ! -e $file ]; then
+        cp ~/.config/mr/available.d/TEMPLATE.vcsh "$file"
+        sed -i '' s/NAME/"$name"/g "$file"
+    else
+        echo "$name config file already exists at $file"
+    fi
+done
